@@ -5,7 +5,7 @@ const AppOverview = () => (
     <h2>Welcome to this React.js starter (my flavor at least)</h2>
     <h3>A quick overview</h3>
     <h4>Getting started:</h4>
-    <p>Simply run <code className={"fomatted"}>cd</code> into the app <code className={"formatted"}>npm install</code> then run <code className={"formatted"}>npm run start:dev</code> to run the development server or <code className={"formatted"}>npm run build && npm start</code> to run the production server.</p>
+    <p>Simply <code className={"fomatted"}>cd</code> into the app run <code className={"formatted"}>npm install</code> then run <code className={"formatted"}>npm run start:dev</code> to run the development server or <code className={"formatted"}>npm run build && npm start</code> to run the production server.</p>
     <p>This is a development and production ready webapp built with react. Out of the box this app implements redux in a fairly simple way and is deployment ready(tested with heroku). Unlike <code className={"formatted"}>create-react-app</code> this template/starter gives you as the developer full control over the configuration, Meaning webpack,express, and babel. Dig in and happy coding.</p>
     <p>This app uses the following technologies:</p>
     <ul className={"technologies-list"}>
