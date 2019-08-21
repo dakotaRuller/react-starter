@@ -4,8 +4,8 @@
   "description": "Starter app for react. Using react, redux, express, webpack, babel and node.js/npm",
   "main": "server.js",
   "scripts": {
-    "start:dev": "export NODE_ENV=Development && webpack-dev-server --open --config webpack.dev.js",
-    "start": "export NODE_ENV=Production && node src/server.js",
+    "start:dev": "webpack-dev-server --open --config webpack.dev.js",
+    "start": "node src/server.js",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "Dakota Ruller",
