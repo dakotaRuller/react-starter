@@ -8,7 +8,21 @@ class Navbar extends Component {
       logo: {
         logoImg: reactStarterLogo,
         altText: "react starter logo"
-      }
+      },
+      navItems: [
+        {
+          linkText: "Overview",
+          href: "#AppOverview"
+        },
+        {
+          linkText: "Redux",
+          href: "#ReduxOverview"
+        },
+        {
+          linkText: "Deployment",
+          href: "#DeploymentOverview"
+        }
+      ]
     }
   }
   render() {
@@ -18,15 +32,11 @@ class Navbar extends Component {
           <img src={this.state.logo.logoImg} alt={this.state.logo.altText}/>
         </div>
         <ul className={"nav-list"}>
-          <li className={"nav-link tech"}>
-            <a href="#AppOverview">Overview</a>
-          </li>
-          <li className={"nav-link redux"}>
-            <a href="#ReduxOverview">Redux</a>
-          </li>
-          <li className={"nav-link deployment"}>
-            <a href="#DeploymentOverview">Deployment</a>
-          </li>
+          {this.state.navItems.map((i, id) => (
+            <li key={id} className={"nav-link tech"}>
+              <a href={i.href}>{i.linkText}</a>
+            </li>
+          ))}
         </ul>
       </div>
     );
