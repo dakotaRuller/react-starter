@@ -10,3 +10,5 @@ This app itself has all the documentation you will need. However you will need t
 4. Run `npm install` from the terminal.
 5. After that finishes run `npm run start:dev` (the default port is 8080).
 6. Navigate to port 8080 running on your localhost and follow the instructions from there.
+
+Live url that better outlines the instructions to get this app started: https://from-scratch-react.herokuapp.com/
